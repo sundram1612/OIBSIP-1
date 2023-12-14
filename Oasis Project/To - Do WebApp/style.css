@@ -1,0 +1,133 @@
+ body {
+    font-family: Arial, sans-serif;
+      background: radial-gradient(ellipse at top, #000000, transparent),
+            radial-gradient(ellipse at bottom, #dd0a0a, transparent),
+            linear-gradient(to right, #7213ad, transparent),
+            linear-gradient(to left, #0b86cd, transparent);
+           
+
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#todo-container {
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgb(24, 19, 48), rgb(48, 36, 63));
+       
+}
+
+
+#todo-header, #todo-list, #todo-footer {
+    padding: 20px;
+    
+}
+
+h2{    
+    text-align: center;
+    box-shadow: -3px -3px 6px black, 3px 3px 3px red;
+    font-weight: 1000;
+    border-radius: 8px;
+    margin-top: 0;
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    font-size: 35px;
+
+
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#todo-list {
+    max-height: 300px;
+    overflow-y: auto;
+    color: blanchedalmond;
+
+}
+#new-task{
+    width: 70%;
+    background: transparent;
+    box-shadow: -5px -5px 10px black;
+    outline: none;
+
+    
+}
+
+
+#todo-footer input, #add-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+#add-btn {
+    width: 20%;
+    background-color: #2868bb;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 600;
+}
+#add-btn:hover{
+    background-color:rgb(49, 49, 183);
+    color: rgb(0, 0, 0);
+}
+
+#clear-btn {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #478ced;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+#clear-btn:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(93, 93, 220);
+    box-shadow: 0px 0px 3px #0047a4;
+}
+    @media screen and (max-width: 700px){
+        #todo-container{
+            width: 100%;
+            
+        }
+        h2{
+            text-align: center;
+        }
+    }
+
+
+   
